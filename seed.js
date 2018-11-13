@@ -23,3 +23,55 @@ db.Vegetable.build({
   .catch(() => {
     console.log('something went wrong');
   });
+
+db.Vegetable.build({
+  name: 'cucumber',
+  color: 'green',
+  planted_on: new Date(),
+})
+  .save()
+  .then(() => {
+    console.log('complete');
+  })
+  .catch(() => {
+    console.log('something went wrong');
+  });
+
+db.Vegetable.build({
+  name: 'corn',
+  color: 'yellow',
+  planted_on: new Date(),
+})
+  .save()
+  .then(() => {
+    console.log('complete');
+  })
+  .catch(() => {
+    console.log('something went wrong');
+  });
+
+db.Vegetable.build({
+  name: 'lettuce',
+  color: 'green',
+  planted_on: new Date(),
+})
+  .save()
+  .then(() => {
+    console.log('complete');
+  })
+  .catch(() => {
+    console.log('something went wrong');
+  });
+
+db.Vegetable.build({
+  name: 'carrot',
+  color: 'orange',
+  planted_on: new Date(),
+})
+  .save()
+  .then(() => {
+    console.log('complete');
+  })
+  .catch(() => {
+    console.log('something went wrong');
+  });
